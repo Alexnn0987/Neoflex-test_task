@@ -1,0 +1,87 @@
+.catalog {
+    width: 100%;
+    margin-top: 28px;
+    padding: 0 30px;
+
+    h2 {
+        color: #838383;
+        font-size: 20px;
+        text-align: start;
+        margin-bottom: 20px;
+    }
+
+    .catalog__list {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        gap: 30px;
+
+        .item-card {
+            height: 407px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+            &__img {
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                flex-grow: 1; 
+            }
+
+            &__text {
+                height: 68px;
+                display: grid;
+                grid-template-columns: repeat(2, 2fr);
+
+                h3 {
+                    color: #1C1C27;
+                    text-align: start;
+                }
+
+                .item-card__price {
+                    p {
+                        font-weight: 600;
+                        color: #FFA542;
+                        text-align: end;
+                    }
+    
+                    .item-card__old-price {
+                        font-size: 13px;
+                        text-decoration: line-through;
+                        color: #FFCE7F;
+                    }
+                }
+                
+
+                .item-card__star {
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+
+                    img {
+                        width: 22px;
+                        height: 23px;
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        color: #838383;
+
+                    }
+                }
+
+                button {
+                    font-weight: 600;
+                    text-align: end;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .block-bottom {
+        margin: 30px 0;
+        
+    }
+}

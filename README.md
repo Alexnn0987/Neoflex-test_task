@@ -1,46 +1,83 @@
-# Getting Started with Create React App
+# Test task for Neoflex (тестовое задание)
+1) Необходимо разработать используя React, React Router, две страницы интернет-магазина аудио аксессуаров. Первая страница –каталог товаров, вторая – корзина с приобретенными товарами; (Использование TS приветствуется). Для стилизации можете выбрать любой подход. (css, sass, styled-components, и т.д). Компоненты желательно продумывать с дальнейшим переиспользованием.
+<br>
+<br>
+2) Необходимо реализовать удобный и масштабируемый роутинг;
+<br>
+<br>
+3) Все элементы ссылок, иконок, должны отзываться при наведении на них (будет плюсом переход на какие либо соц-сети или вызов несуществующего номера);
+<br>
+<br>
+4) Реализовать переход с корзины обратно домой (через logo или кнопкой возврата); Макет доступен по ссылке [Neoflex Invite Test (Copy) (Copy) – Figma](https://www.figma.com/design/qw44OPediu3iquaSvkLtqa/Neoflex-Invite-Test-(Copy)-(Copy)?node-id=0-1)
+<br>
+<br>
+5) При нажатии на «Купить» в карточке на первой странице счетчик товаров рядом с иконкой корзины должен увеличиваться
+![alt](/src/assets/)
+<br>
+<br>
+6) При изменении количества товаров в корзине, сумма и кол-во товаров должна изменяться
+<br>
+<br>
+7) Обязательным условием является хранение данных о каждом товаре в виде элемента массива, например:
+<br>
+<br>
+```
+const headphones = [
+    {
+        img: "./assets/S852.png",
+        title: "Apple BYZ S852I",
+        price: 2927,
+        rate: 4.7,
+    },
+    {
+        "img": "./assets/earpods1.png",
+        "title": "Apple EarPods",
+        "price": 2327,
+        "rate": 4.5
+    },
+    {
+        "img": "./assets/earpods2.png",
+        "title": "Apple EarPods",
+        "price": 2327,
+        "rate": 4.5
+    },
+    {
+        "img": "./assets/airpods.png",
+        "title": "Apple AirPods",
+        "price": 9527,
+        "rate": 4.7
+    },
+    {
+        "img": "./assets/gerlax.png",
+        "title": "Gerlax GH-04",
+        "price": 6527,
+        "rate": 4.7
+    },
+    {
+        "img": "./assets/borofone.png",
+        "title": "Borofone BO4",
+        "price": 7527,
+        "rate": 4.7
+    }
+]
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+и подстановка данных в карточки товара из полученных данных этого массива.
+<br>
+<br>
+Для передачи информации о выбранных в корзину позиций можно использовать SessionStorage.
+<br>
+<br>
+__После выполнения обязательных 7 пунктов можете перейти к дополнительному списку улучшений:__
+- Чистка кода, рефакторинг, работа над улучшением производительности;
+- Адаптивность на все устройства;
+- Возможность удалять карточку товара из корзины товаров;
+- Реализовать «Переход к оформлению» на отдельную страницу с формой оплаты или модальное окно с формой оплаты;
+- Реализовать модальное окно с подробной информацией о товаре, добавить в карточку иконку просмотра на свой выбор, которая будет открывать данное модальное окно;
+<br>
+<br>
 
-## Available Scripts
+### ПРИМЕЧАНИЕ: Приступать к выполнению данных пунктов только после выполнения основных требований тестового задания, если остается время ! Выполнение данных пунктов будет лишь плюсом, а не основным требованием! Всем желаю удачи, вы сможете это сделать :)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
